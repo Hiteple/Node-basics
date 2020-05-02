@@ -1,0 +1,12 @@
+{
+  "name": "4-Node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "nodemon": "NAME=Alex nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
