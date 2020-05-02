@@ -5,7 +5,7 @@
 //singleThreaded();
 
 // 2.
-//const name = require('./environment');
-//console.log('Hi ' + name);
+const name = require('./environment');
+console.log('Hi ' + name);
 
 // 3.

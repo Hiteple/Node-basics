@@ -4,9 +4,16 @@
   "description": "",
   "main": "App.js",
   "scripts": {
-    "nodemon": "NAME=Alex nodemon"
+    "nodemon": "NAME=Alex nodemon",
+    "pm2:start": "pm2 start App.js",
+    "pm2:stop": "pm2 stop App.js",
+    "pm2:status": "pm2 status",
+    "pm2:monitor": "pm2 monitor"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pm2": "^4.4.0"
+  }
 }
