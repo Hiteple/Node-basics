@@ -14,12 +14,26 @@
 //callbackFunc(callbackLog);
 
 // 4. Better than callbacks: promises
+//const promiseMe = require('./promises').promiseMe;
+//const promiseMeAgain = require('./promises').promiseMeAgain;
+//promiseMe()
+//    .then((response) => console.log(response))
+//    .catch(error => console.log(error))
+//    .then(() => promiseMeAgain().then((anotherResponse) => console.log(anotherResponse)))
+//    .catch(errorTwo => console.log(errorTwo))
+//    .then(() => promiseMeAgain().then((anotherResponse) => console.log(anotherResponse)))
+//    .catch(errorThree => console.log(errorThree))
+
+// 5. Even better: Async/Await
 const promiseMe = require('./promises').promiseMe;
 const promiseMeAgain = require('./promises').promiseMeAgain;
-promiseMe()
-    .then((response) => console.log(response))
-    .catch(error => console.log(error))
-    .then(() => promiseMeAgain().then((anotherResponse) => console.log(anotherResponse)))
-    .catch(errorTwo => console.log(errorTwo))
-    .then(() => promiseMeAgain().then((anotherResponse) => console.log(anotherResponse)))
-    .catch(errorThree => console.log(errorThree))
+const tryAndCatch = require('./promises').tryAndCatch;
+(async function repeatAndRepeat() {
+    await tryAndCatch(promiseMe());
+    await tryAndCatch(promiseMeAgain());
+    await tryAndCatch(promiseMe());
+    await tryAndCatch(promiseMeAgain());
+    await tryAndCatch(promiseMe());
+    await tryAndCatch(promiseMeAgain());
+    await tryAndCatch(promiseMe());
+})();
