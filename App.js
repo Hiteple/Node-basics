@@ -5,7 +5,10 @@
 //singleThreaded();
 
 // 2.
-const name = require('./environment');
-console.log('Hi ' + name);
+//const name = require('./environment');
+//console.log('Hi ' + name);
 
 // 3.
+const callbackFunc = require('./callback');
+const callbackLog = '...he he';
+callbackFunc(callbackLog);

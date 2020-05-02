@@ -1,4 +1,4 @@
-function singleThreaded() {
+module.exports = function singleThreaded() {
     console.log('Hello world!');
 
 // If there is an error, the process will TERMINATE. It is SINGLE THREADED
@@ -14,5 +14,3 @@ function singleThreaded() {
         }
     }, 1000);
 }
-
-module.exports = singleThreaded;
