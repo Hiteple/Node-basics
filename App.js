@@ -49,31 +49,40 @@
 //readMe(__dirname + '/txt/hi-there.txt').then((data) => console.log(data));
 
 // 8. Console
-const { message, secondMessage, thirdMessage, func1 } = require('./modules/console');
-console.log(message);
-console.info(message);
-console.error(message);
-console.warn(message);
+//const { message, secondMessage, thirdMessage, func1 } = require('./modules/console');
+//console.log(message);
+//console.info(message);
+//console.error(message);
+//console.warn(message);
 
 // This will be formatted like a table
-const table = [
-    {
-        a: 1,
-        b: 'z'
-    },
-    {
-        a: 2,
-        b: 'y'
-    }
-]
-console.log(table); // Normal
-console.table(table); // Table
+//const table = [
+//    {
+//        a: 1,
+//        b: 'z'
+//    },
+//    {
+//        a: 2,
+//        b: 'y'
+//    }
+//]
+//console.log(table); // Normal
+//console.table(table); // Table
 
 // This will be indented
-console.group('Conversation:');
-console.log(message);
-console.log(secondMessage);
-console.log(thirdMessage);
-console.groupEnd();
+//console.group('Conversation:');
+//console.log(message);
+//console.log(secondMessage);
+//console.log(thirdMessage);
+//console.groupEnd();
 
-func1();
+//func1();
+
+// 9. Errors
+const {breakMe} = require('./modules/errors');
+
+try {
+    breakMe();
+} catch (error) {
+    console.log(`Wow, something broke here... It is an ${error}... But rest assured, for it was captured :)`);
+}
