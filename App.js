@@ -25,15 +25,21 @@
 //    .catch(errorThree => console.log(errorThree))
 
 // 5. Even better: Async/Await
-const promiseMe = require('./promises').promiseMe;
-const promiseMeAgain = require('./promises').promiseMeAgain;
-const tryAndCatch = require('./promises').tryAndCatch;
-(async function repeatAndRepeat() {
-    await tryAndCatch(promiseMe());
-    await tryAndCatch(promiseMeAgain());
-    await tryAndCatch(promiseMe());
-    await tryAndCatch(promiseMeAgain());
-    await tryAndCatch(promiseMe());
-    await tryAndCatch(promiseMeAgain());
-    await tryAndCatch(promiseMe());
-})();
+//const promiseMe = require('./promises').promiseMe;
+//const promiseMeAgain = require('./promises').promiseMeAgain;
+//const tryAndCatch = require('./promises').tryAndCatch;
+//(async function repeatAndRepeat() {
+//    await tryAndCatch(promiseMe());
+//    await tryAndCatch(promiseMeAgain());
+//    await tryAndCatch(promiseMe());
+//    await tryAndCatch(promiseMeAgain());
+//    await tryAndCatch(promiseMe());
+//    await tryAndCatch(promiseMeAgain());
+//    await tryAndCatch(promiseMe());
+//})();
+
+// MODULES
+// 6. Globals
+const {globals, processes} = require('./modules/globals');
+console.log(globals());
+console.log(processes());
