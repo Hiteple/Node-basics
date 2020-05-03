@@ -40,6 +40,10 @@
 
 // MODULES
 // 6. Globals
-const {globals, processes} = require('./modules/globals');
-console.log(globals());
-console.log(processes());
+//const {globals, processes} = require('./modules/globals');
+//console.log(globals());
+//console.log(processes());
+
+// 7. File System
+const readMe = require('./modules/file-system');
+readMe(__dirname + '/txt/hi-there.txt').then((data) => console.log(data));
