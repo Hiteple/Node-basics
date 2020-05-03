@@ -97,3 +97,22 @@
 // 11. HTTP
 //const {myServer} = require('./modules/http');
 //myServer();
+
+// 12. OS
+const {
+  arch,
+  freememKB,
+  freememMB,
+  freememGB,
+  totalGB,
+  homeDIR,
+  hostName,
+} = require("./modules/OS");
+console.log(arch);
+// Logging free RAM and the directories
+console.log(freememKB);
+console.log(freememMB);
+console.log(freememGB);
+console.log(totalGB);
+console.log(homeDIR);
+console.log(hostName);
