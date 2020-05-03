@@ -99,20 +99,26 @@
 //myServer();
 
 // 12. OS
-const {
-  arch,
-  freememKB,
-  freememMB,
-  freememGB,
-  totalGB,
-  homeDIR,
-  hostName,
-} = require("./modules/OS");
-console.log(arch);
+//const {
+//  arch,
+//  freememKB,
+//  freememMB,
+//  freememGB,
+//  totalGB,
+//  homeDIR,
+//  hostName,
+//} = require("./modules/OS");
+//console.log(arch);
 // Logging free RAM and the directories
-console.log(freememKB);
-console.log(freememMB);
-console.log(freememGB);
-console.log(totalGB);
-console.log(homeDIR);
-console.log(hostName);
+//console.log(freememKB);
+//console.log(freememMB);
+//console.log(freememGB);
+//console.log(totalGB);
+//console.log(homeDIR);
+//console.log(hostName);
+
+// 13. Process module
+const { beforeExit, onExit, uncaught } = require("./modules/process");
+beforeExit();
+onExit();
+uncaught();
