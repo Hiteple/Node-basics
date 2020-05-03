@@ -79,10 +79,17 @@
 //func1();
 
 // 9. Errors
-const {breakMe} = require('./modules/errors');
+//const {breakMe} = require('./modules/errors');
 
-try {
-    breakMe();
-} catch (error) {
-    console.log(`Wow, something broke here... It is an ${error}... But rest assured, for it was captured :)`);
-}
+//try {
+//    breakMe();
+//} catch (error) {
+//    console.log(`Wow, something broke here... It is an ${error}... But rest assured, for it was captured :)`);
+//}
+
+// 10. Child processes
+const {executeThis, spawnProcess} = require('./modules/child-processes');
+// Always comment this one below, or the rest won't be executed
+//executeThis();
+// Always comment this one above or the rest won't be executed
+spawnProcess();
