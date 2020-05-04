@@ -14,6 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pm2": "^4.4.0"
+    "bcrypt": "^4.0.1",
+    "moment": "^2.25.1",
+    "pm2": "^4.4.0",
+    "sharp": "^0.25.2"
   }
 }

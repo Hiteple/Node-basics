@@ -118,7 +118,26 @@
 //console.log(hostName);
 
 // 13. Process module
-const { beforeExit, onExit, uncaught } = require("./modules/process");
-beforeExit();
-onExit();
-uncaught();
+//const { beforeExit, onExit, uncaught } = require("./modules/process");
+//beforeExit();
+//onExit();
+//uncaught();
+
+// 14. Popular modules
+const {
+  hashPass,
+  usingMoment,
+  usingSharp,
+} = require("./modules/popular-modules");
+
+console.log("HASHING PASS...");
+hashPass("1234");
+console.log("USING MOMENT");
+usingMoment();
+console.log("END USING MOMENT");
+console.log("USING SHARP");
+usingSharp(
+  __dirname + "/assets/original.png",
+  __dirname + "/assets/resized.png"
+);
+console.log("END USING SHARP");
