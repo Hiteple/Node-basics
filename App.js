@@ -155,5 +155,15 @@
 //data();
 
 // 16. Benchmarking
-const add = require("./benchmarking");
-console.log(add);
+//const add = require("./benchmarking");
+//console.log(add);
+
+// 17. First callbacks
+const { myAsync } = require("./first-callbacks");
+myAsync((error, data) => {
+  if (error) {
+    console.error(`Oops, we have an error`);
+    return false;
+  }
+  console.log(data);
+});
