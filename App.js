@@ -124,20 +124,32 @@
 //uncaught();
 
 // 14. Popular modules
-const {
-  hashPass,
-  usingMoment,
-  usingSharp,
-} = require("./modules/popular-modules");
+//const {
+//  hashPass,
+//  usingMoment,
+//  usingSharp,
+//} = require("./modules/popular-modules");
 
-console.log("HASHING PASS...");
-hashPass("1234");
-console.log("USING MOMENT");
-usingMoment();
-console.log("END USING MOMENT");
-console.log("USING SHARP");
-usingSharp(
-  __dirname + "/assets/original.png",
-  __dirname + "/assets/resized.png"
-);
-console.log("END USING SHARP");
+//console.log("HASHING PASS...");
+//hashPass("1234");
+//console.log("USING MOMENT");
+//usingMoment();
+//console.log("END USING MOMENT");
+//console.log("USING SHARP");
+//usingSharp(
+//  __dirname + "/assets/original.png",
+//  __dirname + "/assets/resized.png"
+//);
+//console.log("END USING SHARP");
+
+// 15. Buffers && streams
+// Buffers
+const { buffer1, buffer2, bufferString, makeABC } = require("./memory/buffers");
+const { data } = require("./memory/streams");
+console.log(buffer1);
+console.log(buffer2);
+bufferString();
+makeABC();
+
+// Streams
+data();
