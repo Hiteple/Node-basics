@@ -159,11 +159,15 @@
 //console.log(add);
 
 // 17. First callbacks
-const { myAsync } = require("./first-callbacks");
-myAsync((error, data) => {
-  if (error) {
-    console.error(`Oops, we have an error`);
-    return false;
-  }
-  console.log(data);
-});
+//const { myAsync } = require("./first-callbacks");
+//myAsync((error, data) => {
+//  if (error) {
+//    console.error(`Oops, we have an error`);
+//    return false;
+//  }
+//  console.log(data);
+//});
+
+// 18. Scrapping with Node using Puppeteer
+const { scrappingThis } = require("./scrapping");
+//scrappingThis();
