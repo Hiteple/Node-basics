@@ -144,12 +144,16 @@
 
 // 15. Buffers && streams
 // Buffers
-const { buffer1, buffer2, bufferString, makeABC } = require("./memory/buffers");
-const { data } = require("./memory/streams");
-console.log(buffer1);
-console.log(buffer2);
-bufferString();
-makeABC();
+//const { buffer1, buffer2, bufferString, makeABC } = require("./memory/buffers");
+//const { data } = require("./memory/streams");
+//console.log(buffer1);
+//console.log(buffer2);
+//bufferString();
+//makeABC();
 
 // Streams
-data();
+//data();
+
+// 16. Benchmarking
+const add = require("./benchmarking");
+console.log(add);
