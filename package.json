@@ -8,13 +8,18 @@
     "pm2:start": "pm2 start App.js",
     "pm2:stop": "pm2 stop App.js",
     "pm2:status": "pm2 status",
-    "pm2:monitor": "pm2 monitor"
+    "pm2:monitor": "pm2 monitor",
+    "start": "gulp",
+    "build": "gulp build",
+    "serve": "gulp serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-server-livereload": "^1.9.2",
     "moment": "^2.25.1",
     "pm2": "^4.4.0",
     "puppeteer": "^3.0.2",

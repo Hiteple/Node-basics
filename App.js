@@ -169,5 +169,5 @@
 //});
 
 // 18. Scrapping with Node using Puppeteer
-const { scrappingThis } = require("./scrapping");
+//const { scrappingThis } = require("./scrapping");
 //scrappingThis();
