@@ -22,7 +22,7 @@
     "electron": "^8.2.5",
     "gulp": "^4.0.2",
     "gulp-server-livereload": "^1.9.2",
-    "moment": "^2.25.1",
+    "moment": "^2.29.2",
     "pm2": "^4.4.0",
     "puppeteer": "^3.0.2",
     "sharp": "^0.25.2"
